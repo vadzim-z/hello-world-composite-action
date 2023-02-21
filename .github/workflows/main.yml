@@ -7,7 +7,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - id: foo
-        uses: vadzim-z/hello-world-composite-action@v1
+        uses: vadzim-z/hello-world-composite-action/actions/@main
         with:
           who-to-greet: 'Vox Machina 2'
       - run: echo random-number ${{ steps.foo.outputs.random-number }}
