@@ -9,6 +9,6 @@ jobs:
       - id: foo
         uses: vadzim-z/hello-world-composite-action@v1
         with:
-          who-to-greet: 'Vox Machina'
+          who-to-greet: 'Vox Machina 2'
       - run: echo random-number ${{ steps.foo.outputs.random-number }}
         shell: bash
